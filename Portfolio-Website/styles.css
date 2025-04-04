@@ -1,0 +1,225 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8; /* Light grayish-blue background */
+    color: #000000;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  
+  nav {
+    background-color: #ffffff; /* White background for the navbar */
+    color: #000000;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  nav .logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4a90e2; /* Soft blue color */
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #000000; /* Changed to dark text for contrast */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #4a90e2;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4a90e2;
+    text-align: center;
+  }
+  
+  .home {
+    text-align: center;
+    padding: 50px 20px;
+    background: #4a90e2; /* Light blue background */
+    color: #000000; /* Changed to dark text for visibility */
+    border-radius: 15px;
+    margin: 20px 0;
+  }
+  
+  .home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #000000; /* White text for the heading */
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #000000; /* Light gray for better contrast */
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #4a90e2;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #4a90e2;
+    color: #ffffff;
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card h3 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  form {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #4a90e2;
+  }
+  
+  button {
+    background: #4a90e2;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+  
+  button:hover {
+    background: #3b7bbf;
+  }
+  
+  #form-status {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #0f0a0a; /* Text color for form status */
+  }
+  
+  footer {
+    background-color: #4a90e2;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .projects-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card {
+      width: 90%;
+    }
+  }
+  
